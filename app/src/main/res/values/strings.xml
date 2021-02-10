@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Ejercicio 11 MJose</string>
+
+    <string name="introduce_nombre">Introduce nombre</string>
+    <string name="nombre">Nombre</string>
+
+    <string name="introduce_apellidos">Introduce apellidos</string>
+    <string name="apellidos">Apellidos</string>
+
+    <string name="introduce_edad">Introduce edad</string>
+    <string name="edad">Edad</string>
+
+    <string name="cantidad">Cantidad</string>
+    <string name="fin_compra">Fin Compra</string>
+    <string name="a_adir_a_la_compra">Añadir a la compra</string>
+    <string name="apellidosC">APELLIDOS</string>
+    <string name="nombrec">NOMBRE</string>
+    <string name="n_tarjeta">Nº TARJETA</string>
+    <string name="fecha_de_caducidad">FECHA DE CADUCIDAD</string>
+    <string name="cvv">CVV</string>
+    <string name="total">TOTAL</string>
+    <string name="totalC">total</string>
+    <string name="comprar">COMPRAR</string>
+
+
+    <string-array name="productosVenta">
+        <item>Botella de vino</item>
+        <item>Kas limon</item>
+        <item>Kas naranja</item>
+        <item>Red bull</item>
+        <item>Cerveza</item>
+    </string-array>
+
+
+
+
+</resources>

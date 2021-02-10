@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompraFinalizada">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineIzq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDrc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="20dp" />
+
+
+    <TextView
+        android:id="@+id/LNombreC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/nombrec"
+        app:layout_constraintEnd_toStartOf="@+id/LApellidosC"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/guidelineIzq"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/LApellidosC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:text="@string/apellidosC"
+        app:layout_constraintEnd_toStartOf="@id/guidelineDrc"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop" />
+
+    <EditText
+        android:id="@+id/txtNombreC"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@id/guidelineIzq"
+        app:layout_constraintTop_toBottomOf="@id/LNombreC" />
+
+    <EditText
+        android:id="@+id/txtApellidosC"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@id/guidelineDrc"
+        app:layout_constraintTop_toBottomOf="@id/LApellidosC" />
+
+
+    <TextView
+        android:id="@+id/LTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/n_tarjeta"
+        app:layout_constraintStart_toEndOf="@id/guidelineIzq"
+        app:layout_constraintTop_toBottomOf="@id/txtNombreC" />
+
+    <EditText
+        android:id="@+id/txtNTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:digits="1234567890"
+        android:singleLine="true"
+        android:maxLength="16"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@id/guidelineIzq"
+        app:layout_constraintTop_toBottomOf="@id/LTarjeta" />
+
+
+    <TextView
+        android:id="@+id/LFechaCaducidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/fecha_de_caducidad"
+        app:layout_constraintStart_toEndOf="@id/guidelineIzq"
+        app:layout_constraintTop_toBottomOf="@id/txtNTarjeta" />
+
+    <NumberPicker
+        android:id="@+id/npFCaducidadMes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        app:layout_constraintStart_toEndOf="@id/guidelineIzq"
+        app:layout_constraintTop_toBottomOf="@id/LFechaCaducidad" />
+
+
+    <NumberPicker
+        android:id="@+id/npFCaducidadAnio"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        app:layout_constraintStart_toEndOf="@id/npFCaducidadMes"
+        app:layout_constraintTop_toBottomOf="@id/LFechaCaducidad" />
+
+
+    <TextView
+        android:id="@+id/LCVV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/cvv"
+        app:layout_constraintEnd_toStartOf="@id/guidelineDrc"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@id/LFechaCaducidad"
+        app:layout_constraintTop_toBottomOf="@id/txtNTarjeta" />
+
+    <EditText
+        android:id="@+id/txtCVV"
+        android:layout_width="126dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true"
+        android:maxLength="3"
+        android:digits="1234567890"
+        app:layout_constraintEnd_toStartOf="@id/guidelineDrc"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toEndOf="@id/npFCaducidadAnio"
+        app:layout_constraintTop_toBottomOf="@id/LCVV" />
+
+    <TextView
+        android:id="@+id/LTotal"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="60dp"
+        android:text="@string/total"
+        app:layout_constraintBottom_toTopOf="@id/bValidar"
+        app:layout_constraintStart_toEndOf="@id/guidelineIzq" />
+
+    <EditText
+        android:id="@+id/txtTotal"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/totalC"
+        app:layout_constraintBottom_toTopOf="@id/bValidar"
+        app:layout_constraintEnd_toStartOf="@id/guidelineDrc" />
+
+    <Button
+        android:id="@+id/bValidar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/comprar"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineDown"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDrc"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="@+id/guidelineIzq" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
